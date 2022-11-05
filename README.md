@@ -27,7 +27,20 @@ GOOGLE_CLIENT_SECRET= {paste here google client secret}
 const API_URL = `http://localhost:${4000}`
 ```
 
-4. Regist your app on Google Cloud Platform in order to get a Client Id and Secret
+4. Regist your app on Google Cloud Platform
+https://www.passportjs.org/tutorials/google/register/
+
+Set up on Authorized JavaScript Origins:
+
+```
+http://localhost:{API_PORT}
+```
+
+Set up redirect uris:
+```
+http://localhost:{API_PORT}/api/auth/callback/google
+```
+
 
 5. Setup prisma:
 Run:
